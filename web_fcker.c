@@ -93,7 +93,7 @@ void *attack_connection(){
                 printf("\x1b[32m"
                 "Thread id: %ld sent %i packages to %s:%i\n", tid, psent, web_address, web_port);
                 
-                write(socket_stat, default_message, 100);
+                write(socket_stat, default_message, 666);
                 psent++;
             }
 
