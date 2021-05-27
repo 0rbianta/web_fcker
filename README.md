@@ -3,11 +3,11 @@ I watched a lot of hacking movies and then developed that hack-tool. Its a nice 
 
 # 1)Clone Repository
 ```
-# git clone https://github.com/0rbianta/web_fcker
+#git clone https://github.com/0rbianta/web_fcker
 ```
 # 2)Compile them(Can use gcc, clang etc.)
 ```
-# gcc web_fcker.c -o web_fcker -lpthread
+#gcc web_fcker.c -o web_fcker -lpthread
 ```
 # 3)Run the fcker
 ```
