@@ -5,7 +5,7 @@ I watched a lot of hacking movies and then developed that hack-tool. Its a nice 
 ```
 # git clone https://github.com/0rbianta/web_fcker
 ```
-# 2)Compile C them(Can use gcc, clang etc.)
+# 2)Compile them(Can use gcc, clang etc.)
 ```
 # gcc web_fcker.c -o web_fcker -lpthread
 ```
